@@ -1,0 +1,28 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "Rigidity of Symmetric Holomorphic Functions on Infinite-Dimensional Sequence Spaces",
+  "creators": [
+    {
+      "name": "Feldman, David",
+      "affiliation": "University of New Hampshire",
+      "orcid": "0000-0001-6943-4833"
+    },
+    {
+      "name": "Bannon, Jon",
+      "affiliation": "Siena College",
+      "orcid": "0000-0002-6347-5447"
+    }
+  ],
+  "description": "Symmetric holomorphic functions on permutation-invariant domains modeled on the space of null sequences are constant: permutation symmetry forces the differential to vanish along constant tails, and constancy propagates along finitely supported segments. The paper locates the exact boundary of the phenomenon, with a proved obstruction at the exceptional coordinates and a Banach-limit counterexample on the bounded sequences. Every numbered mathematical statement of Sections 2-5 is formally verified in Lean 4 against Mathlib; the development compiles without sorry and depends only on the axioms propext, Classical.choice, and Quot.sound.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "infinite-dimensional holomorphy",
+    "symmetric functions",
+    "permutation invariance",
+    "rigidity",
+    "Banach limits",
+    "Lean 4",
+    "formal verification"
+  ]
+}

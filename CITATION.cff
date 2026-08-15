@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Rigidity of Symmetric Holomorphic Functions on Infinite-Dimensional Sequence Spaces"
+authors:
+  - family-names: "Feldman"
+    given-names: "David"
+    affiliation: "University of New Hampshire"
+    orcid: "https://orcid.org/0000-0001-6943-4833"
+  - family-names: "Bannon"
+    given-names: "Jon"
+    affiliation: "Siena College"
+    orcid: "https://orcid.org/0000-0002-6347-5447"
+repository-code: "https://github.com/DavidVFeldman/rigidity-symmetric-holomorphic"
+license: CC-BY-4.0
+keywords:
+  - infinite-dimensional holomorphy
+  - symmetric functions
+  - permutation invariance
+  - rigidity
+  - Banach limits
+  - Lean 4
+  - formal verification
