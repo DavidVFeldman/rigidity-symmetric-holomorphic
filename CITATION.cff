@@ -11,6 +11,7 @@ authors:
     affiliation: "Siena College"
     orcid: "https://orcid.org/0000-0002-6347-5447"
 repository-code: "https://github.com/DavidVFeldman/rigidity-symmetric-holomorphic"
+doi: "10.5281/zenodo.21944129"
 license: CC-BY-4.0
 keywords:
   - infinite-dimensional holomorphy

@@ -2,6 +2,8 @@
 
 David Feldman (University of New Hampshire) and Jon Bannon (Siena College)
 
+[![DOI](https://zenodo.org/badge/1334872632.svg)](https://doi.org/10.5281/zenodo.21944129)
+
 A holomorphic function on a permutation-invariant domain in an
 infinite-dimensional sequence space, invariant under all finite permutations
 of coordinates, is severely constrained. On domains modeled on the space
@@ -79,7 +81,9 @@ pdflatex rigidity-symmetric-holomorphic.tex
 
 ## Citation
 
-See `CITATION.cff`. The formalization was produced with
+Archived at Zenodo, concept DOI
+[10.5281/zenodo.21944129](https://doi.org/10.5281/zenodo.21944129) (always
+resolves to the latest release). See `CITATION.cff`. The formalization was produced with
 [Aristotle](https://aristotle.harmonic.fun) (Harmonic).
 
 ## License
