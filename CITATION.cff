@@ -3,7 +3,7 @@ message: "If you use this work, please cite it as below."
 title: "Rigidity of Symmetric Holomorphic Functions on Infinite-Dimensional Sequence Spaces"
 authors:
   - family-names: "Feldman"
-    given-names: "David"
+    given-names: "David Victor"
     affiliation: "University of New Hampshire"
     orcid: "https://orcid.org/0000-0001-6943-4833"
   - family-names: "Bannon"
@@ -12,6 +12,8 @@ authors:
     orcid: "https://orcid.org/0000-0002-6347-5447"
 repository-code: "https://github.com/DavidVFeldman/rigidity-symmetric-holomorphic"
 doi: "10.5281/zenodo.21944129"
+version: "1.1"
+date-released: "2026-08-15"
 license: CC-BY-4.0
 keywords:
   - infinite-dimensional holomorphy

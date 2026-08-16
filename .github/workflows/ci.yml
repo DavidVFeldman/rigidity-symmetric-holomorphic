@@ -11,6 +11,43 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: leanprover/lean-action@v1
-        with:
-          lake-package-directory: lean
+
+      - name: Install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Report toolchain
+        working-directory: lean
+        run: |
+          lake --version
+          lean --version
+
+      - name: Get Mathlib cache
+        working-directory: lean
+        run: lake exe cache get
+
+      - name: Build
+        working-directory: lean
+        run: |
+          set -o pipefail
+          lake build | tee build.log
+
+      - name: Axiom audit (semantic, from build transcript)
+        working-directory: lean
+        run: |
+          test -s build.log
+          count=$(grep -c "depends on axioms" build.log)
+          echo "Declarations audited: $count (expected 13)"
+          [ "$count" -eq 13 ]
+          bad=$(sed -n 's/.*depends on axioms: \[\(.*\)\]/\1/p' build.log \
+                | tr ',' '\n' | tr -d ' ' \
+                | grep -vE '^(propext|Classical\.choice|Quot\.sound)$' || true)
+          if [ -n "$bad" ]; then
+            echo "Non-standard axioms found:"; echo "$bad"; exit 1
+          fi
+          if grep -q "sorryAx" build.log; then
+            echo "sorryAx present in transcript"; exit 1
+          fi
+          echo "Axiom audit clean."

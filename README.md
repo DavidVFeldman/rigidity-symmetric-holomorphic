@@ -1,6 +1,6 @@
 # Rigidity of Symmetric Holomorphic Functions on Infinite-Dimensional Sequence Spaces
 
-David Feldman (University of New Hampshire) and Jon Bannon (Siena College)
+David Victor Feldman (University of New Hampshire) and Jon Bannon (Siena College)
 
 [![DOI](https://zenodo.org/badge/1334872632.svg)](https://doi.org/10.5281/zenodo.21944129)
 
@@ -46,7 +46,7 @@ paper as an open problem.
 | `exists_finPermBanachLimit`, `connected_literal_statement_false` | Example 5.2 (Banach-limit counterexample) | proved |
 
 The formalization was carried out with Aristotle (Harmonic) from written
-work orders, archived in `verification/`. It corrected the original draft
+work orders; the audit reports are archived in `verification/`. It corrected the original draft
 twice: the permutation identity had omitted the movement of the base point,
 and a local-to-global step was false outright, with the counterexample now
 part of the development.
@@ -57,8 +57,8 @@ part of the development.
 - `lean/` — the Lean 4 project; `lake build` inside this directory verifies
   the development against Mathlib (pinned by `lean-toolchain` and
   `lake-manifest.json`)
-- `verification/` — the formalization plan, work orders, run summaries, and
-  audit reports (the complete audit trail)
+- `verification/` — the formalization plan, run summaries, and audit
+  reports (the audit trail; see the note there on numbering)
 - `.github/workflows/ci.yml` — continuous verification on every push
 
 ## Building
